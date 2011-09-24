@@ -9,11 +9,14 @@ int main()
 {
 	int i,temp;
 	int cntr[26]={0};
+
 	while((temp=getchar())!='\n')
 	{
 		temp = toupper(temp);
 		cntr[(temp-'A')]++;
 	}
+
+	//Print out result
 	for(i=0;i<26;i++)
 		if(cntr[i]>0) printf("%c_%d\n",i+'A',cntr[i]);
 	return 0;
