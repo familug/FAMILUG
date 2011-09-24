@@ -11,10 +11,8 @@ int main()
 	int cntr[26]={0};
 	while((temp=getchar())!='\n')
 	{
-		if(isupper(temp))
-			cntr[(temp-'A')]++;
-		if(islower(temp))
-			cntr[(temp-'a')]++;
+		temp = toupper(temp);
+		cntr[(temp-'A')]++;
 	}
 	for(i=0;i<26;i++)
 		if(cntr[i]>0) printf("%c_%d\n",i+'A',cntr[i]);
