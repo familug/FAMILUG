@@ -1,5 +1,6 @@
 /**
  * @author: FamiHug@familug.com
+ * @version: 0.5
  */
 
 public class HelloThon {
