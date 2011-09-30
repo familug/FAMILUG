@@ -23,6 +23,7 @@ public class CopyBytes
 				out.write(c);
 			}
 
+			System.out.println("Done!");
 		} finally {
 			if(in != null) in.close();
 			if(out != null) out.close();
