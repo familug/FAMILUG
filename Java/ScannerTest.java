@@ -30,7 +30,7 @@ public class ScannerTest
 
 		} finally {
 			if(s != null) s.close();
-		}
+		}//finally
 
-	}
-}
+	}//main()
+}//ScannerTest
