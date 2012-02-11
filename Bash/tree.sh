@@ -1,4 +1,5 @@
-#X TREE                                          #
+# Changed by HVN to make structure more clearly
+#  X TREE                                             #
 #  Version: 2.3                                       #
 #  File: ~/apps/tree/tree.sh                          #
 #                                                     #
@@ -33,7 +34,7 @@ if [ "$1" != "" ]  #if parameter exists, use as base folder
    fi
 pwd
 ls -R | grep ":$" |   \
-   sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'
+   sed -e 's/:$//' -e 's/[^-][^\/]*\//---|/g' -e 's/^/   /' -e 's/-/|/'
 # 1st sed: remove colons
 # 2nd sed: replace higher level folder names with dashes
 # 3rd sed: indent graph three spaces
