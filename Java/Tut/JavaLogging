@@ -1,0 +1,18 @@
+pkg: java.util.logging.*
+
+Want to log? you need:
+1. a Logger - which is used to log msg for a specific system or app component. Often use pkg dot-separated namespace EX: com.familug.hvn
+2. a Handler - need to be registe to a Logger by logger.addHandler(handler). This obj can forward the msg to a variety of destinations: console, files, OS logs, etc...
+ - if you want to send your log to a file, use FileHandler("filename");
+3. Set level for your logger.often uses setLevel(Level.ALL);
+LEVELS: ALL <-SEVERE <- WARNING <- INFO <- CONFIG <- FINE <- FINER <- FINEST <- OFF
+4. [Option] setFomatter() - format your log
+
+Logging quickly:
+Standard: yourLogger.log(Level level, String msg);
+helper method for logging:
+yourLogger.severe(String msg) - log a SEVERE msg
+yourLogger.warning(msg);
+yourLogger.info(msg);
+and same with all remain (except ALL and OFF)
+

@@ -1,0 +1,4 @@
+Use below command to create Executable JAR file
+
+/home/famihug/workspace/ProjectEuler/bin$ jar cvfe PE61Solver.jar hvn.pe61.PE61GUI hvn/pe61/*.class
+																			all classes are in package hvn.pe61
