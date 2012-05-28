@@ -3,7 +3,7 @@
  *
  *       Filename:  Pokemon.cpp
  *
- *    Description:  OOP with pokemon :))
+ *    Description:  virtual example
  *
  *        Version:  1.0
  *        Created:  05/28/2012 04:37:18 PM
@@ -66,9 +66,6 @@ int main()
 	Pichu aPichu;
 	Pikachu aPikachu;
 	Bulbasaur aBulbasaur;
-
-	//	aPichu.sayMyName();
-	//	aPikachu.sayMyName();
 
 	say(aPichu);
 	say(aPikachu);
