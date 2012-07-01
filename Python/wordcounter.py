@@ -4,8 +4,8 @@ import sys
 def nice_print(li):
 	for i in li:
 		print i[1][0] , i[0] ,
-		for j in i[1][1]:
-			print j,
+		for num in i[1][1]:
+			print num,
 		print 
 
 def count_words(filename):
@@ -37,6 +37,7 @@ def count_words(filename):
 				if line_number not in d[lower][1]:
 					d[lower][1].append(line_number)
 	
+	#sort by desc frequency, then by asc word
 	sorted_d = sorted(d.iteritems() , key = lambda x: (x[1][0] * -1, x[0]))
 	nice_print(sorted_d)
 
