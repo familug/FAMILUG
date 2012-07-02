@@ -25,9 +25,9 @@ def count_words(filename):
 		for w in line.split():
 			#Lower case
 			lower = w.lower()
-			#store all value in a list in values of dict
+			#store counter, line numbers in a list in value of dict
 			if lower in d:
-				#first number is counter, others are line number
+				#first element is counter, others are line numbers
 				d[lower][0] += 1
 			else:
 				d[lower] = [1]
