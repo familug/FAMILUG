@@ -2,8 +2,12 @@
 import sys
 
 def nice_print(li):
+	"""Nice print list with structure : 
+		[word, [counter, linenum1, linenum2, ...]]"""
 	for i in li:
+		#print counter, word
 		print i[1][0] , i[0] ,
+		#print line numbers
 		for num in i[1][1:]:
 			print num,
 		print 
