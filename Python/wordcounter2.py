@@ -32,7 +32,6 @@ def count_words(filename):
 		for w in line.split():
 			#Lower case
 			lower = w.lower()
-			#store counter, line numbers in a list in value of dict
 			if lower in d:
 				d[lower].increase_counter()
 				d[lower].add_happened_line(line_number)
