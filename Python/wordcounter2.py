@@ -26,9 +26,9 @@ def count_words(filename):
 
 	d = {}
 	#count word and line
-	for line in lines:
+	for (number, line) in enumerate(lines):
 		#get line number
-		line_number = lines.index(line) + 1
+		line_number = number + 1
 		for w in line.split():
 			#Lower case
 			lower = w.lower()
