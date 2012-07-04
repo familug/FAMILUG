@@ -20,6 +20,12 @@ print ret
 ret = map(lambda x, y : str(x) + str(y), li2, li3 )
 print ret
 
+big_list = [li1, li2]
+print big_list
+
+#list of sum of each sub list
+print map(sum, big_list)
+
 #return a tubple consis of corresponding items from two list
 ret = map(None, li2, li3)
 print ret
