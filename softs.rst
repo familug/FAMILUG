@@ -1,14 +1,9 @@
-FAMILUG member favorite Linux software
+FAMILUG members' favorite Linux software
 =====
 
-* Ebook reader: 
-  fbreader
-
-* Dictionary: 
-  stardict
-
-* Editor
-  vim
-
-* SVC
-  git
+* Ebook reader: fbreader
+* Dictionary: stardict
+* Editor: vim
+* SVC: git
+* Video: vlc
+* Window manager: i3
