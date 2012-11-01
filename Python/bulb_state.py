@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 
 # Cho 100 cai bong den
-bulb_states = [True for i in range(101)]
+n = 101
+bulb_states = [True for _ in range(n)]
+bulb_states[0] = False
 
 """
 Nguoi thu 1 bat het 100 cai len
@@ -12,12 +14,13 @@ Nguoi thu 100 thay doi bong 100
 Hoi trang thai sau cung, cac bong nao dang bat?
 """
 
-for i, item in enumerate(bulb_states):
-    if i == 0 or i == 1: continue
-    for j in range(i, 101, i):
+for number in range(n):
+    if number == 0 or number == 1: continue
+    for kxnumber in range(number, 101, number):
         # Thay doi trang thai
-        bulb_states[j] = False if bulb_states[j] == True else True
+        bulb_states[kxnumber] = False if bulb_states[kxnumber] == True else True
 
-for i, item in enumerate(bulb_states):
-    if item:
-        print i
+print "Bulbs are on: ",
+for number, is_on in enumerate(bulb_states):
+    if is_on:
+        print number,
