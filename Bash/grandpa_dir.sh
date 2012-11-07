@@ -1,12 +1,15 @@
 #!/bin/bash
 
-current_filename=$0
-
 get_grandpa_dirname () {
+    echo $1
     grandpaDir=$(dirname $0)
-        for i in `seq $1` ; do
-                grandpaDir=$(dirname $grandpaDir)
-                done
+    # convert it to absolute path
+    grandpaDir=$(cd $grandpaDir && pwd)
+
+    for i in `seq $1` ; do
+        grandpaDir=$(dirname $grandpaDir)
+    done
+    echo $grandpaDir
 }
 
 get_grandpa_dirname 3
