@@ -1,0 +1,36 @@
+if [ $# = 0 ]; then
+    echo "Use: ./pypro project_name"
+    exit 1
+fi
+
+dir=$(dirname $0)
+absdir=$(cd $dir && pwd)
+
+mkdir $1
+cd $1
+mkdir $1 docs tests bin
+touch $1/__init__.py
+touch tests/__init__.py
+
+cat <<- 'EOF' > setup.py
+try:
+    from setuptools import setup
+except ImportError:
+    from distutils.core import setup
+
+config = {
+'description': 'My Project',
+'author': 'hvn',
+'url': 'URL to get it at.',
+'download_url': 'Where to download it.',
+'author_email': 'hvnsweeting@gmail.com',
+'version': '0.1',
+'install_requires': ['nose'],
+'packages': ['NAME'],
+'scripts': [],
+'name': '$1'
+}
+
+setup(**config)
+EOF
+ 
