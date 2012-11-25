@@ -31,9 +31,8 @@ def print_fib2(n):
     else:
         print 0, 1, 
         for i in range(2, n):
-            c = a + b
-            a, b = b, c
-            print c,
+            a, b = b, a + b
+            print b,
 
 
 if __name__ == "__main__":
