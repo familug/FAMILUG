@@ -7,6 +7,7 @@ import commands
 import random
 import base64
 import json
+from pprint import pprint
 
 
 KEYLEN = 16
@@ -72,7 +73,7 @@ def main():
     encrypted_key = public.encrypt(key, None)
     b64en = base64.b64encode(encrypted_key[0])
     b64_data = base64.b64encode(cypher)
-    data = json.dumps({'key': b64en, 'data': b64_data })
+    data = json.dumps({'key': b64en, 'data': b64_data }, indent=4)
     #print encrypted_key
     print "transfering over internet..."
     print "Hahaha, I'm MITM, i'm seeing: ", data

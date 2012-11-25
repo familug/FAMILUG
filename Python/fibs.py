@@ -8,9 +8,9 @@ def fib(n):
 def fib_fast(n):
     from math import sqrt
     s5 = sqrt(5)
-    x = ((1 + s5) / 2) ** n
-    y = ((1 - s5) / 2) ** n
-    return int((x - y)/s5)
+    x = (1 + s5) ** n
+    y = (1 - s5) ** n
+    return int((x - y)/(s5 * 2**n))
     
 
 def print_fib(n):
