@@ -1,14 +1,12 @@
 # A python yeild example to generate fibonacci number
 
-def fib():
+def fib(n):
+    cntr = 0
     a, b = 0, 1
-    while 1:
-        yield b
+    while cntr < n:
+        yield a
         a, b = b, a + b
-
-cntr = 0
-for n in fib():
-    print n
-    cntr += 1
-    if cntr == 10:
-        break
+        cntr += 1
+        
+for i in fib(10):
+    print i
