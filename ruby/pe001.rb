@@ -15,9 +15,16 @@ class PE001
         return (0..999).reject{|i| i % 3 != 0 and i % 5 !=0}.reduce(:+)
     end
 
+    def solve_inject
+        #http://blog.jayfields.com/2008/03/ruby-inject.html
+        #i hate this subtle sugar syntax
+        return (0..999).reject {|i| i % 3 != 0 and i % 5 != 0}.inject{|sum, num| sum + num}
+    end
+
     def show_result
         puts solve_python
         puts solve_reduce
+        puts solve_inject
     end
 end
 
