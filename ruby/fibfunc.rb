@@ -6,7 +6,7 @@ def fib(n)
     s5 = Math.sqrt 5
     a = (1 + s5) ** n
     b = (1 - s5) ** n
-    @result = (a - b) / (2 ** n * s5)
+    return (a - b) / (2 ** n * s5)
 end
 
 def do_math
