@@ -4,9 +4,10 @@
 #longer with class
 #class FMLB1
 #    def list_users
-#        file = File.new('/etc/passwd', 'r')
-#        while(line = file.gets)
-#            puts line.split(':')[0]
+#        File.open('/etc/passwd', 'r') do |f|
+#            while(line = f.gets)
+#                puts line.split(':')[0]
+#            end
 #        end
 #    end
 #end
@@ -17,7 +18,8 @@
 #end
 
 #and shorter just as needed
-file = File.new('/etc/passwd', 'r')
-while(line = file.gets)
-    puts line.split(':')[0]
+File.open('/etc/passwd', 'r') do |f|
+    while(line = f.gets)
+        puts line.split(':')[0]
+    end
 end
