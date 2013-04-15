@@ -9,7 +9,7 @@ def fib(n)
     return (a - b) / (2 ** n * s5)
 end
 
-# user recursive for fib
+# use recursive for fib
 # def fib(n)
 #     return n if n < 2
 #     return fib(n-1) + fib(n-2)
