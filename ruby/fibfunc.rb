@@ -9,6 +9,12 @@ def fib(n)
     return (a - b) / (2 ** n * s5)
 end
 
+# use recursive for fib
+# def fib(n)
+#     return n if n < 2
+#     return fib(n-1) + fib(n-2)
+# end
+
 def do_math
     puts "Fast fibonacci\n"
     (1..10).each do |n|
