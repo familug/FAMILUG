@@ -1,0 +1,1 @@
+/home/lamdt/lua/fingerprint.lua
