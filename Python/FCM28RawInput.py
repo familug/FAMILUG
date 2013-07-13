@@ -1,4 +1,4 @@
-#!usr/bin/env python
+#!usr/bin/env python2
 
 name = raw_input("Full name: ")
 if name == 'Nguyen Viet Hung':

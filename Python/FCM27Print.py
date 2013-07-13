@@ -1,4 +1,4 @@
-#!/bin/env python
+#!/bin/env python2
 print "Python FCM27"
 name = raw_input("Enter your name: ")
 print 'Hello ' + name + ' !'

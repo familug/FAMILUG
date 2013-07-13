@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 
 from Crypto.Cipher import AES
 from Crypto.Hash import SHA

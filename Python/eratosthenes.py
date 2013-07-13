@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 
 threshold = 101
 primes = [True for _ in range(threshold)]
