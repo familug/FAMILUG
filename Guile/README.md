@@ -9,10 +9,10 @@ is a dialect of Scheme
 Installation
 ------------
 
-Ubuntu::
+Ubuntu:
 
-  apt-get install -y guile-2.0
+    apt-get install -y guile-2.0
 
-ArchLinux::
+ArchLinux:
 
-  pacman -S guile
+    pacman -S guile
