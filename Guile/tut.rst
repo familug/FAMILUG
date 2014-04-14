@@ -124,6 +124,97 @@ is the idea that:
 Closure
 --------
 
+(let ((s (* a b)))
+(blah (* s s))
+)
+
+If the let body contains a lambda expr, the local env is not forgotten
+local env associated with the procedure that is created by the lambda expr.
+
+Because:
+When GUILE interpreter evaluates a lambda expr, it stores the current
+env as part of the procedure definition.
+whenever that procedure is called, the interpreter reinstates the env that
+is stored in the procedure definition and eval the procedure body within the
+context of that env
+
+define must be at top level, or they would not be accesible at top level
+
+Closure is the capture of an env, containing persistent var bindings, within
+the def of a procedure or a set of related procedures.
+
+Apply method to my-account :
+(my-account 'get-balance)
+
+Beginer
+scheme@(guile-user)> (< 1 2)
+$29 = #t
+scheme@(guile-user)> (> 1 2)
+$30 = #f
+========
+
+Data type
+-------
+
+Boolean
+~~~~~
+
+#f mean false
+all other and #t mean true
+
+scheme@(guile-user)> (< 1 2)
+$29 = #t
+scheme@(guile-user)> (> 1 2)
+$30 = #f
+scheme@(guile-user)> (if 0 (+ 1 1) "no")
+$16 = 2
+scheme@(guile-user)> (if #f "yes" " no")
+$17 = " no"
+
+scheme@(guile-user)> (not #t)
+$33 = #f
+scheme@(guile-user)> (not #f)
+$34 = #t
+
+scheme@(guile-user)> (boolean? #f)
+$36 = #t
+scheme@(guile-user)> (boolean? 123)
+$37 = #f
+
+Number
+-------
+
+scheme@(guile-user)> (number? 123)
+$38 = #t
+scheme@(guile-user)> (number? "familug")
+$39 = #f
+
+integer
+~~~~~~~
+
+Abitrarily big.
+
+$41 = 1219326311126352690000000
+scheme@(guile-user)> (integer? 321)
+$42 = #t
+scheme@(guile-user)> (integer? 1.2)
+$43 = #f
+
+real
+------
+scheme@(guile-user)> (real? 1.2)
+$44 = #t
+scheme@(guile-user)> (real? 1)
+$45 = #t
+
+scheme@(guile-user)> (integer? (inexact->exact 23.0))
+$49 = #t
 
 
+exact and inexact
+-------
+scheme@(guile-user)> (exact? 23)
+$46 = #t
+scheme@(guile-user)> (exact? 23.0)
+$47 = #f
 
