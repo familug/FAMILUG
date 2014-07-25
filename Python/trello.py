@@ -29,7 +29,7 @@ assert trello(sample) == 680131659347
 def trello_revert(hash, chars=None):
     if not chars:
         chars = []
-    # hash = idx (<=15) will % 37 == 0
+    # hash - idx (<=15) will % 37 == 0
     if hash < 37:
         return
     for i in range(0, len(LETTERS)):
