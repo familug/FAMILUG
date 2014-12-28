@@ -2,7 +2,10 @@
 // at Sun Dec 28 10:55:19 SGT 2014
 package main
 import (
+    "flag"
     "fmt"
+    "os"
+    "strconv"
     "sync"
     "time"
 )
@@ -24,7 +27,17 @@ func SleepSort(xs []int) {
 }
 
 func main() {
-    numbs := []int{2, 1, 3}
+    flag.Parse()
+    numbs := make([]int, len(flag.Args()))
+    var err error
+    for i, v := range flag.Args() {
+        numbs[i], err = strconv.Atoi(v)
+        if err != nil {
+            fmt.Println("Bad argument %v", err)
+            os.Exit(2)
+        }
+    }
+    fmt.Println("Numbers to sort: ", numbs)
     SleepSort(numbs)
     fmt.Println("Done magically sleepsort algorithm")
 }
