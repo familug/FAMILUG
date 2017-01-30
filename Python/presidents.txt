@@ -1,0 +1,45 @@
+George Washington | February 22, 1732
+John Adams | October 30, 1735
+Thomas Jefferson | April 13, 1743
+James Madison | March 16, 1751
+James Monroe | April 28, 1758
+Andrew Jackson | March 15, 1767
+John Quincy Adams | July 11, 1767
+William Henry Harrison | February 9, 1773
+Martin Van Buren | December 5, 1782
+Zachary Taylor | November 24, 1784
+John Tyler | March 29, 1790
+James Buchanan | April 23, 1791
+James K. Polk | November 2, 1795
+Millard Fillmore | January 7, 1800
+Franklin Pierce | November 23, 1804
+Andrew Johnson | December 29, 1808
+Abraham Lincoln | February 12, 1809
+Ulysses S. Grant | April 27, 1822
+Rutherford B. Hayes | October 4, 1822
+Chester A. Arthur | October 5, 1829
+James A. Garfield | November 19, 1831
+Benjamin Harrison | August 20, 1833
+Grover Cleveland | March 18, 1837
+William McKinley | January 29, 1843
+Woodrow Wilson | December 28, 1856
+William Howard Taft | September 15, 1857
+Theodore Roosevelt | October 27, 1858
+Warren G. Harding | November 2, 1865
+Calvin Coolidge | July 4, 1872
+Herbert Hoover | August 10, 1874
+Franklin D. Roosevelt | January 30, 1882
+Harry S. Truman | May 8, 1884
+Dwight D. Eisenhower | October 14, 1890
+Lyndon B. Johnson | August 27, 1908
+Ronald Reagan | February 6, 1911
+Richard M. Nixon | January 9, 1913
+Gerald R. Ford | July 14, 1913
+John F. Kennedy | May 29, 1917
+George H. W. Bush | June 12, 1924
+Jimmy Carter | October 1, 1924
+Donald Trump | June 14, 1946
+George W. Bush | July 6, 1946
+Bill Clinton | August 19, 1946
+Barack Obama | August 4, 1961
+Donald Trump | June 14, 1946
