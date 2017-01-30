@@ -9,7 +9,6 @@ import canchi
 f = open('presidents.txt')
 years = []
 for line in f:
-    line.strip().split('|')[1].strip()
     dob = line.strip().split('|')[1].strip()
     dob = datetime.datetime.strptime(dob, '%B %d, %Y')
     if dob.year < 1900:
@@ -27,6 +26,6 @@ for line in f:
         years.append(ld.year)
 
 
-zhis = [canchi.get_branch(year) for year in years]
-s = pd.Series(zhis)
+branches = [canchi.get_branch(year) for year in years]
+s = pd.Series(branches)
 print s.value_counts()
