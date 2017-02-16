@@ -14,7 +14,9 @@ def main():
     while cntr < 12:
         if date.weekday() == THURS or date.weekday() == TUE:
             cntr += 1
-            print(date.strftime('%c'))
+            formated = date.strftime('%c')
+            formated = formated.replace(' 00:00:00', '')
+            print('%2d:  %s' % (cntr, formated))
 
         date += datetime.timedelta(1)
 
