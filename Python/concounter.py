@@ -6,13 +6,13 @@ import os
 import shutil
 
 
-def create_big_files(n=4, prefix='bigfile'):
-    print("Creating files")
+def create_big_files(n=os.cpu_count(), prefix='bigfile'):
+    print("Creating {} big files".format(n))
     numbs = list(range(n))
     first = numbs.pop(0)
 
     def get_fn(number):
-        return '{}{}.txt'.format(prefix, number)
+        return '{}{}.con.txt'.format(prefix, number)
 
     basefile = get_fn(first)
 
@@ -42,7 +42,7 @@ def main():
     print("Running in concurrent mode")
     with concurrent.futures.ProcessPoolExecutor() as executor:
         files = os.listdir()
-        txts = [f for f in files if f.endswith('.txt')]
+        txts = [f for f in files if f.endswith('.con.txt')]
         for fn, c in zip(txts, executor.map(count, txts)):
             print(fn, c)
 
