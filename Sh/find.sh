@@ -20,15 +20,13 @@ sfind () {
     cd $1
     # echo "in $(pwd), got $1"
     for f in *; do
-        # ./xyz -> xyz
-        fn=$(basename "$f")
-        # echo "  Checking $fn"
-        if [ "$fn" = "$filename" ]; then
-            echo "Found $fn in $(pwd)"
+        # echo "  Checking $f"
+        if [ "$f" = "$filename" ]; then
+            echo "Found $f in $(pwd)"
             # exit 0
         fi
         if [ -d "$f" ]; then
-            sfind $fn $(pwd)
+            sfind $f $(pwd)
         fi
     done
     # echo "From $(pwd) back to: $2"
