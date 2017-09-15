@@ -28,10 +28,10 @@ def rle(string):
             print("    Got new char: %s, set counter to 1" % c)
             count = 1
             prev_c = c
-    else:
-        print("--No more character, add the last char+count to result")
-        out.append(c + str(count))
-        print("    Result now: %s" % out)
+
+    print("--No more character, add the last char+count to result")
+    out.append(c + str(count))
+    print("    Result now: %s" % out)
     result = ''.join(out)
 
     print("*Output: %s\n" % result)
