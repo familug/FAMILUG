@@ -8,7 +8,11 @@ import time
 
 def main():
     start = datetime.datetime.now()
-    spr.call(['notify-send', 'Started new pomodoro'])
+    start_str = start.strftime("%H:%M:%S")
+    spr.call(['notify-send',
+              '--app-name', 'POMODORO',
+              '--icon', 'dialog-information',
+              'New pomodoro', 'From: {}'.format(start_str)])
     time.sleep(30 * 60)
     end = datetime.datetime.now()
     duration = (end - start).total_seconds() // 60
@@ -19,7 +23,8 @@ def main():
             ['notify-send',
              'POMO: {0:.0f} minute passed.\tFrom {1}'.format(
                  duration,
-                 start.strftime("%H:%M:%S"))
+                 start_str
+             )
              ]
         )
 
