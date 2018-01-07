@@ -46,7 +46,7 @@ generate_sound_file(filename)
 if sys.platform == 'darwin':
     subprocess.call(['afplay', filename])
 elif 'win' in sys.platform:
-    subprocess.call(['start', filename])
+    subprocess.call(['start', 'wmplayer', filename])
 else:
     try:
         subprocess.call(['xdg-open', filename])
