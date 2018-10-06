@@ -1,9 +1,8 @@
-(use irregex)
 (use regex)
 (use utils)
 
 (define (grep-from-file pattern filename)
-  (grep pattern (irregex-split "\n" (read-all filename))))
+  (grep pattern (read-lines filename)))
 
 (define (display-lines lines)
   (for-each (lambda (x) (begin (display x) (newline)))

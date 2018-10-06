@@ -7,6 +7,7 @@
 
 ## Documents
 
+- For Python programmers: http://wiki.call-cc.org/chicken-for-python-programmers
 - CHICKEN Scheme homepage http://eggs.call-cc.org/
 - HTDP https://htdp.org/2003-09-26/Book/curriculum-Z-H-1.html#node_toc_start
 
