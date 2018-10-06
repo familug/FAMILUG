@@ -42,3 +42,27 @@ Read all strings from a file:
 (use utils)
 (read-all "/etc/passwd")
 ```
+
+### Extension
+Essential extensions:
+
+  • Unit library Basic Scheme definitions
+  • Unit eval Evaluation
+  • Unit expand Modules and macros handling
+  • Unit data-structures Data structures
+  • Unit ports I/O ports
+  • Unit files File and pathname operations
+  • Unit extras Useful utility definitions
+  • Unit irregex Regular expressions
+  • Unit srfi-1 List Library
+  • Unit srfi-4 Homogeneous numeric vectors
+  • Unit srfi-13 String library
+  • Unit srfi-14 Character set library
+  • Unit srfi-18 multithreading
+  • Unit srfi-69 Hashtable Library
+  • Unit posix Unix-like services
+  • Unit utils Shell scripting and file operations
+  • Unit tcp Basic TCP-sockets
+  • Unit lolevel Low-level operations
+
+To use, just type `(use srfi-1)` for using unit srfi-1
