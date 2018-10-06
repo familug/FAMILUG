@@ -25,9 +25,8 @@ String procedures provided by unit `srfi-13`
 (string-upcase "apymi")
 OUTPUT: "APYMI"
 ```
-```
 
-Could use many procedures in unit `irregex`
+Could also use many procedures in unit `irregex`
 
 ```scheme
 (use irregex)
