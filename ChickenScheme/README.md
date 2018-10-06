@@ -1,6 +1,14 @@
 # Scheme
 
-https://pp.pymi.vn/article/scm1/
+## Vietnamese tutorial
+
+- Introduction: https://pp.pymi.vn/article/scm1/
+- Package management: https://pp.pymi.vn/article/scm_egg/
+
+## Documents
+
+- CHICKEN Scheme homepage http://eggs.call-cc.org/
+- HTDP https://htdp.org/2003-09-26/Book/curriculum-Z-H-1.html#node_toc_start
 
 ## List
 
