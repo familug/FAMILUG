@@ -9,6 +9,7 @@
 
 - For Python programmers: http://wiki.call-cc.org/chicken-for-python-programmers
 - CHICKEN Scheme homepage http://eggs.call-cc.org/
+- Teach you Scheme in fixed days http://ds26gte.github.io/tyscheme/
 - HTDP https://htdp.org/2003-09-26/Book/curriculum-Z-H-1.html#node_toc_start
 
 ## csi tips
