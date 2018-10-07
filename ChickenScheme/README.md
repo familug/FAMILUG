@@ -11,18 +11,41 @@
 - CHICKEN Scheme homepage http://eggs.call-cc.org/
 - HTDP https://htdp.org/2003-09-26/Book/curriculum-Z-H-1.html#node_toc_start
 
+## csi tips
+`csi` command is interactive shell like `python` or `ipython`,
+some tips:
+
+- Show help for a procedure/unit (function/module)
+
+```
+(use chicken-doc)
+,doc KEYWORD
+```
+
+e.g `,doc fold`
+
 ## List
 
 ### Creating
-- '(a b c) : List of symbol a b c
-- '(1 2 a b) : List of symbol 1 2 a b - 1 2 also is number
-- (list 1 2 'a 'b) : Same as above
-
+- '(a b c) ; List of symbol a b c
+- '(1 2 a b) ; List of symbol 1 2 a b - 1 2 also is number
+- (list 1 2 'a 'b) ; Same as above
+- (iota 10) ; creates list 0->9
+- (iota 5 1 2) ; creates list '(1 3 5 7 9)  ; count=5 start=1 step=2
+- (for-each print (iota 10)) ; print 0->9
+- (make-list 10 1) ; (1 1 1 1 1 1 1 1 1 1)
 ### Modifying
 #### Add element to head of list
 - (cons 1 '(a b c 2)) => (1 a b c 2) : CONStructing new list with 1 and the second list's elements
 - (append '(a b c) '(2 3 4)) => (a b c 2 3 4) : create new list by concat two lists.
 
+
+### Transforming
+
+```scheme
+(fold + 1 '(1 2 3)) ; => 7
+(reduce + 1 '(1 2 3)) ; => 6 ; 1 only set when list empty
+```
 
 ## String processing
 There are not much string process function.
